@@ -9,3 +9,7 @@ get "/pokemons" do
   @pokemons = Pokemon.all
   erb :"pokemons/index"
 end
+
+get "/pokemons/new" do
+  erb :"pokemons/new"
+end
